@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  test flake8:
+  test_flake8:
     # Разворачиваем окружение:
     runs-on: ubuntu-latest
 
@@ -32,7 +32,7 @@ jobs:
       # Вызываем flake8 и указываем ему,
       # что нужно проверить файлы только в папке backend/
       run: python -m flake8 backend/
-  tests isort:
+  tests_isort:
     # Разворачиваем окружение:
     runs-on: ubuntu-latest
 
